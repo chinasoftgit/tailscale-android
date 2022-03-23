@@ -28,7 +28,7 @@ jobs:
  
       - name: Upload Release
         uses: softprops/action-gh-release@v1
-        if: ${{ env.GIT_BRANCH != 'Meta' && success() }}
+        if: ${{ success() }}
         with:
           tag_name: latest
           files: tailscale-debug.apk
