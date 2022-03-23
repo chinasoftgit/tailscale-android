@@ -33,4 +33,4 @@ jobs:
           tag_name: latest
           files: tailscale-debug.apk
           release: true
-          repository: yangchuansheng/tailscale-android
+          repository: ${{ github.actor }}/tailscale-android
